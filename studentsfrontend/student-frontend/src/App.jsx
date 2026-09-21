@@ -6,12 +6,12 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Login from "./components/Login";
-import Register from "./components/Register";
-import Home from "./components/Home";
-import Feedback from "./components/Feedback";
-import ProtectedRoute from "./components/ProtectedRoute";
+import Navbar from "./Components/Navbar";
+import Login from "./Components/Login";
+import Register from "./Components/Register";
+import Home from "./Components/Home";
+import Feedback from "./Components/Feedback";
+import ProtectedRoute from "./Components/ProtectedRoute";
 
 function App() {
   const user = localStorage.getItem("student");

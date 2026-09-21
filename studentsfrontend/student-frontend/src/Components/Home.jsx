@@ -22,7 +22,7 @@ const Home = () => {
   }, []);
 
   const getStudents = async () => {
-    const res = await axios.get("http://localhost:3000/user/all");
+    const res = await axios.get("/all");
     setStudents(res.data);
   };
 
@@ -30,7 +30,7 @@ const Home = () => {
     if (!window.confirm("Delete this student?")) return;
 
     try {
-      await axios.delete(`http://localhost:3000/user/delete/${id}`);
+      await axios.delete(`/user/delete/${id}`);
       alert("Student Deleted Successfully");
       getStudents();
     } catch (error) {
